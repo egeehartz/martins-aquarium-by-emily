@@ -1,0 +1,29 @@
+@import "./fishes.css";
+@import "./locations.css";
+@import "./quotes.css";
+@import "./tips.css";
+
+#container{
+    display: flex;
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+}
+.siteTitle{
+    margin-left: 44px;;
+}
+.siteLogo{
+    height: 6rem;
+}
+.content--left{
+    flex: 3;
+    padding-right: 3em;
+}
+.content--right{
+    flex: 1;
+}
+article {
+    margin: 1rem;
+}

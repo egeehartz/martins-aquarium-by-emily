@@ -1,0 +1,15 @@
+.fishes {
+    border: 12px double orangered;
+    background-color: grey;
+    color: ivory;
+}
+.fish__image{
+    margin: 2rem;
+    border: 2px solid black;
+}
+.fish{
+    text-align: center;
+}
+.fish__diet{
+    padding-bottom: 1rem;
+}
