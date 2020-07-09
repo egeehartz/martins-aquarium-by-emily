@@ -1,3 +1,13 @@
 .quotes {
-    border: 3px dotted green;
+    border: 12px double green;
+    background-color: white;
+    
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.quote__end {
+    padding-left: 18rem;
 }

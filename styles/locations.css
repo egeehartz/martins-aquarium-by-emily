@@ -1,3 +1,21 @@
 .locations {
-    border: 3px dotted goldenrod;
+    border: 12px double goldenrod;
+    background-color: white;
+}
+.location {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.location__images {
+    align-self: center;
+}
+.location__image{
+    border: 2px solid black;
+}
+.location__specific{
+    align-self: center;
+}
+a {
+    color: black;
 }

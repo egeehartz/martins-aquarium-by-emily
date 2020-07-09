@@ -9,20 +9,30 @@
 
 .header {
     display: flex;
-    align-items: center; 
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    border: 10px double black;
+    background-color: white;
 }
-.siteTitle{
+body {
+    background-color: lightgray;
+}
+.mainTitle{
     margin-left: 44px;;
 }
-.siteLogo{
+.logo{
     height: 6rem;
 }
 .content--left{
-    flex: 3;
+    flex: 2;
     padding-right: 3em;
 }
 .content--right{
     flex: 1;
+    border: 12px double cornflowerblue;
+    margin: 1rem;
+    background-color: white;
 }
 article {
     margin: 1rem;
