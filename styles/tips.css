@@ -1,0 +1,19 @@
+aside {
+    margin: 1rem;
+}
+.tips{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.tip {
+    display: flex;
+    flex-direction: column;
+}
+.tip__specific {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.tip__explanation {
+    padding-top: 1rem;
+}
