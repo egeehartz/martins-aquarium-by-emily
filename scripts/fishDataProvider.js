@@ -1,17 +1,19 @@
 const fishCollection = [
     {
-        Name: "Martin Jr",
-        Species: "Atlantic Cod",
-        Length: "30 inches",
-        Location: "Atlantic Ocean",
-        Diet: "herring",
+        name: "Martin Jr",
+        food: "herring",
+        species: "Atlantic Cod",
+        length: "30 inches",
+        location: "Atlantic Ocean",
+        image: "./images/cod.jpeg"
     },
     {
-        Name: "Bruce",
-        Species: "Great White Shark",
-        Length: "11 feet",
-        Location: "Pacific Ocean",
-        Diet: "fish... But he's trying to be vegetarian",
+        name: "Bruce",
+        diet: "fish... But he's trying to be vegetarian",
+        species: "Great White Shark",
+        length: "11 feet",
+        location: "Pacific Ocean",
+        image: "./images/bruce.jpeg"
     }
 ]
 
