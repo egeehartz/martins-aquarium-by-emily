@@ -1,3 +1,5 @@
+//this file manages the raw data
+
 const fishCollection = [
     {
         name: "Martin Jr",
@@ -9,7 +11,7 @@ const fishCollection = [
     },
     {
         name: "Bruce",
-        diet: "fish... But he's trying to be vegetarian",
+        food: "fish... But he's trying to be vegetarian",
         species: "Great White Shark",
         length: "11 feet",
         location: "Pacific Ocean",
@@ -18,5 +20,6 @@ const fishCollection = [
 ]
 
 export const useFish = () => {
-    return fishCollection
+    //.slice() allows you to return a copy of fishCollection
+    return fishCollection.slice()
 }
