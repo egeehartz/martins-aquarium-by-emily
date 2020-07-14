@@ -11,9 +11,7 @@ export const fishAsHTML = (fish) => {
                 <div>Species: ${fish.species}</div>
                 <div>Location: ${fish.location}</div>
                 <div>Length: ${fish.length}</div>
-                <div class="fish__food">Food: ${fish.food}</div>
-
-                
+                <div class="fish__food">Food: ${fish.food}</div> 
         </div>
     `
 }
