@@ -1,3 +1,5 @@
+//this file manages the raw data
+
 const fishCollection = [
     {
         name: "Martin Jr",

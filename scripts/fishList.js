@@ -1,6 +1,9 @@
 // FishList which renders individual fish objects as HTML 
+//takes stuff from fish.js and fishDataProvider.js and combines them
 
 import { useFish } from './FishDataProvider.js'
+import {fishAsHTML} from "./fish.js"
+
 
 export const fishList = () => {
 
@@ -8,10 +11,15 @@ export const fishList = () => {
     const contentElement = document.querySelector(".fish-content")
     const fishes = useFish()
 
+    let fishHTMLrepresentation = ""
+    for(const currentFishObj of fishes){
+        fishHTMLrepresentation += fishAsHTML(currentFishObj)
+    }
+
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
         <section class="fishList">
-            All the fish go here!
+            ${fishHTMLrepresentation}
         </section>
     `
 }
