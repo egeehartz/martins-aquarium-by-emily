@@ -1,11 +1,11 @@
-// FishList which renders individual fish objects as HTML
+// FishList which renders individual fish objects as HTML 
 
 import { useFish } from './FishDataProvider.js'
 
-export const FishList = () => {
+export const fishList = () => {
 
-    // Get a reference to the `<article class="content">` element 
-    const contentElement = document.querySelector("insert selector here")
+    // Get a reference to the element that holds the fish section
+    const contentElement = document.querySelector(".fish-content")
     const fishes = useFish()
 
     // Add to the existing HTML in the content element

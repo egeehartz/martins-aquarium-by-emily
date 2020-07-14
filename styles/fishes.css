@@ -1,4 +1,4 @@
-.fishes {
+.fish-content {
     border: 12px double orangered;
     background-color: white;
    
@@ -10,6 +10,6 @@
 .fish{
     text-align: center;
 }
-.fish__diet{
+.fish__food{
     padding-bottom: 1rem;
 }
