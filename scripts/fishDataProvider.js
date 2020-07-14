@@ -9,7 +9,7 @@ const fishCollection = [
     },
     {
         name: "Bruce",
-        diet: "fish... But he's trying to be vegetarian",
+        food: "fish... But he's trying to be vegetarian",
         species: "Great White Shark",
         length: "11 feet",
         location: "Pacific Ocean",
