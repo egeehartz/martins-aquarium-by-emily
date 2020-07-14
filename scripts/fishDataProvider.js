@@ -14,3 +14,7 @@ const fishCollection = [
         Diet: "fish... But he's trying to be vegetarian",
     }
 ]
+
+export const useFish = () => {
+    return fishCollection
+}
