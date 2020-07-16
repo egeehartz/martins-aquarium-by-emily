@@ -1,18 +1,14 @@
 // FishList which renders individual fish objects as HTML 
 //takes stuff from fish.js and fishDataProvider.js and combines them
 
-import { useFish } from './fishDataProvider.js'
+import { mostHolyFish, soldierFish, nonHolyFish } from './fishDataProvider.js'
 import {fishAsHTML} from "./fish.js"
 
+const contentElement = document.querySelector(".fish-content")
 
-export const fishList = () => {
-
-    // Get a reference to the element that holds the fish section
-    const contentElement = document.querySelector(".fish-content")
-    const fishes = useFish()
-
+const addFishToDOM = (arrayOfFish) => {
     let fishHTMLrepresentation = ""
-    for(const currentFishObj of fishes){
+    for(const currentFishObj of arrayOfFish){
         fishHTMLrepresentation += fishAsHTML(currentFishObj)
     }
 
@@ -23,3 +19,16 @@ export const fishList = () => {
         </section>
     `
 }
+
+
+export const fishList = () => {
+    const holyFishes = mostHolyFish()
+    addFishToDOM(holyFishes)
+
+    const soldiers = soldierFish()
+    addFishToDOM(soldiers)
+
+    const plebs = nonHolyFish()
+    addFishToDOM(plebs)
+}
+    
